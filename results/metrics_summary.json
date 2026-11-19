@@ -1,0 +1,117 @@
+{
+  "part_a_ml": {
+    "random_seed": 12,
+    "synthetic_rows": 600,
+    "train_rows": 420,
+    "test_rows": 180,
+    "test_rmse": 3.4376,
+    "test_r2": 0.9326,
+    "pairwise_clash_predictions": {
+      "1_2": 39.7,
+      "1_3": 2.05,
+      "1_4": 10.08,
+      "2_3": 10.42,
+      "2_4": 7.72,
+      "3_4": 2.06
+    },
+    "clash_matrix": [
+      [
+        0.0,
+        39.7,
+        2.05,
+        10.08
+      ],
+      [
+        39.7,
+        0.0,
+        10.42,
+        7.72
+      ],
+      [
+        2.05,
+        10.42,
+        0.0,
+        2.06
+      ],
+      [
+        10.08,
+        7.72,
+        2.06,
+        0.0
+      ]
+    ]
+  },
+  "part_b_qubo": {
+    "num_variables": 8,
+    "lambda_penalty": 100.0,
+    "constant_offset": 400.0,
+    "brute_force_ground_energy": 9.77,
+    "valid_states_count": 16,
+    "is_ground_state_valid": true,
+    "optimal_states": [
+      {
+        "bitstring": "01100110",
+        "energy": 9.77,
+        "slot_1": [
+          "Exam 2",
+          "Exam 4"
+        ],
+        "slot_2": [
+          "Exam 1",
+          "Exam 3"
+        ]
+      },
+      {
+        "bitstring": "10011001",
+        "energy": 9.77,
+        "slot_1": [
+          "Exam 1",
+          "Exam 3"
+        ],
+        "slot_2": [
+          "Exam 2",
+          "Exam 4"
+        ]
+      }
+    ]
+  },
+  "part_c_quantum": {
+    "simulator": "simulated_annealing",
+    "num_reads": 1000,
+    "num_sweeps": 300,
+    "best_bitstring": "01100110",
+    "best_energy": 9.77,
+    "appearance_count": 82,
+    "frequency_pct": 8.2,
+    "ground_state_exact_match": true,
+    "energy_gap": 0.0
+  },
+  "part_d_parallel": {
+    "scaling_benchmarks": [
+      {
+        "workers": 1,
+        "time_seconds": 19.8898,
+        "speedup": 1.0,
+        "efficiency_pct": 100.0
+      },
+      {
+        "workers": 2,
+        "time_seconds": 14.2796,
+        "speedup": 1.3929,
+        "efficiency_pct": 69.64
+      },
+      {
+        "workers": 4,
+        "time_seconds": 13.5851,
+        "speedup": 1.4641,
+        "efficiency_pct": 36.6
+      }
+    ],
+    "num_restarts": 16
+  },
+  "part_e_conclusion": [
+    "1. Final Choice: Schedule Slot 1 = [Exam 2, Exam 4] and Slot 2 = [Exam 1, Exam 3], achieving the global minimum clash burden of 9.77 students.",
+    "2. ML & Quantum Learning: SVR-predicted clash matrices seamlessly map into an 8-variable QUBO Hamiltonian, where quadratic penalty terms enforce exact single-slot constraints and simulated quantum annealing converges directly to the brute-force global minimum.",
+    "3. Parallel Computing Learning: Running independent stochastic restarts via multiprocessing.Pool delivers practical parallel acceleration (1.46x speed-up on 4 workers), proving that parallelizing multi-seed quantum restarts maximizes ground-state hit rates while mitigating process-spawning overhead."
+  ]
+}

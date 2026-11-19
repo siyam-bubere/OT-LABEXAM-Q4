@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "exam-scheduling-qubo"
+version = "1.0.0"
+description = "Exam Scheduling Optimization with Support Vector Regression, QUBO, Quantum Annealing, and Parallel Multiprocessing"
+authors = [{ name = "AI Research & Optimization Team" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "scikit-learn>=1.2.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
