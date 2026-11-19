@@ -12,8 +12,14 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import List, Dict, Any
 
+# Student Information
+STUDENT_NAME = "Siyam Bubere"
+STUDENT_REG_ID = "241070012"
+STUDENT_CLASS = "TY B.Tech Computer Engineering (Semester 5)"
+COURSE_NAME = "Optimization Techniques Lab (OT-LABEXAM-Q4)"
+
 # Academic Context & Seeds
-RANDOM_SEED = 12  # Specified as '012' in question prompt
+RANDOM_SEED = 12  # Specified as '012' in question prompt (derived from Reg ID 241070012)
 DATASET_ROWS = 600
 TRAIN_SPLIT = 0.70
 TEST_SPLIT = 0.30

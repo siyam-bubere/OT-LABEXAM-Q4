@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "exam-scheduling-qubo"
 version = "1.0.0"
 description = "Exam Scheduling Optimization with Support Vector Regression, QUBO, Quantum Annealing, and Parallel Multiprocessing"
-authors = [{ name = "AI Research & Optimization Team" }]
+authors = [{ name = "Siyam Bubere", email = "buberesiyam@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [

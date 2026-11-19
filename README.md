@@ -6,6 +6,11 @@
 [![Optimization](https://img.shields.io/badge/QUBO-8--Qubit%20Ising-purple.svg)]()
 [![Course Outcomes](https://img.shields.io/badge/Outcomes-CO1%20%7C%20CO2%20%7C%20CO4-orange.svg)]()
 
+> **Student Name:** Siyam Bubere  
+> **Registration ID:** 241070012, TY B.Tech Computer Engineering (Semester 5)  
+> **Course / Lab:** Optimization Techniques Lab (OT Lab Exam - Question 4)  
+> **Random Seed Derivation:** Seed `012` derived directly from Reg ID suffix (`...012` $\rightarrow$ `seed = 12`)  
+
 A complete, production-grade implementation solving the **University Exam Scheduling Problem under Conflict Constraints** by integrating **Support Vector Regression (ML)**, **Quadratic Unconstrained Binary Optimization (QUBO)**, **Simulated Quantum Annealing (Quantum Computing)**, and **Multi-core Process Scaling (Parallel Computing)**.
 
 ---

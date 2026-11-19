@@ -1,5 +1,12 @@
 # Academic Submission Report: Question 4 (5 Marks)
 ## Machine Learning + Quantum Computing + Parallel Computing
+
+**Student Details:**
+- **Name:** Siyam Bubere
+- **Registration ID:** 241070012, TY B.Tech Computer Engineering (Semester 5)
+- **Course / Lab:** Optimization Techniques Lab (OT Lab Exam - Question 4)
+- **Seed Specification:** `random_seed = 012` (derived from Reg ID suffix `241070012`)
+
 **Course Outcomes (CO) Addressed:**
 - **CO1 (01 Mark)**: Apply Machine Learning (Support Vector Regression) for predictive modeling of conflict constraints.
 - **CO2 (2.5 Marks)**: Formulate combinatorial scheduling into a QUBO energy function and solve via Quantum Annealing.
