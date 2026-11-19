@@ -231,6 +231,8 @@ The final choice and core learnings synthesized into exactly 3 lines:
 exam_scheduling_qubo/
 ├── README.md                           # Master project documentation (this file)
 ├── REPORT.md                           # Detailed academic submission report (CO1, CO2, CO4)
+├── REPORT_QUESTION_4.pdf               # Complete 8-Page Formal Academic PDF Report (with charts & diagrams)
+├── build_pdf_report.py                 # ReportLab automated PDF builder script
 ├── requirements.txt                    # Python dependency requirements
 ├── pyproject.toml                      # Modern packaging specification
 ├── .gitignore                          # Standard git exclusion patterns
@@ -238,7 +240,7 @@ exam_scheduling_qubo/
 │
 ├── src/                                # Core modular source code
 │   ├── __init__.py                     # Package initialization
-│   ├── config.py                       # Configuration constants (seeds, exams, lambdas)
+│   ├── config.py                       # Configuration constants (seeds, exams, lambdas, student metadata)
 │   ├── ml_svr.py                       # Part a: Synthetic data, SVR model, clash prediction
 │   ├── qubo_builder.py                 # Part b: QUBO Q matrix, penalty, brute-force solver
 │   ├── quantum_solver.py               # Part c: Simulated quantum annealing, frequency analysis
@@ -256,8 +258,11 @@ exam_scheduling_qubo/
 ├── notebooks/                          # Interactive exploratory notebooks
 │   └── exam_scheduling_q4.ipynb        # End-to-end Jupyter notebook with inline plots
 │
-└── results/                            # Generated artifacts and plots
+└── results/                            # Generated visual artifacts and plots
     ├── metrics_summary.json            # Machine-readable output metrics
+    ├── system_architecture.png         # Overall 4-stage optimization pipeline flowchart
+    ├── optimal_schedule_diagram.png    # Optimal vs suboptimal timetable conflict layout
+    ├── pipeline_execution_screenshot.png # High-resolution terminal run screenshot
     ├── svr_evaluation.png              # SVR test scatter plot & 4x4 clash heatmap
     ├── qubo_energy_spectrum.png        # Complete 256-state QUBO energy spectrum
     ├── annealing_solution_distribution.png # Quantum solution histogram
